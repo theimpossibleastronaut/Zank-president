@@ -68,8 +68,9 @@ function socketMessage( msg, rinfo ) {
 	var result = processMessage( msg.toString() );
 
 	if ( result == "GAMES" ) {
-		response = "OK\n";
+		response = "OK;gamelist\n";
 		// Todo: append games list
+		response += "100.100.100.100;7001;My Zank game\n";
 	} else if ( result == true ) {
 		response = "OK";
 	}
@@ -82,6 +83,10 @@ function socketMessage( msg, rinfo ) {
 }
 
 function processMessage( msg ) {
+
+	if ( msg.indexOf( 'GAMES|list' ) === 0 ) {
+		return "GAMES";
+	}
 
 	return true;
 }

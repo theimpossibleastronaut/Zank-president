@@ -23,5 +23,5 @@ Default settings: bindv6=true, bindv4=true, bindaddress=0.0.0.0
 
 The server will always respond with ERR or with ACK to confirm the state.
 If the message 'GAMES list' is sent, the server will reply with a list of games is the format:
-OK\n
+OK;gamelist\n
 address;port;name\n
