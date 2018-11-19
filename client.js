@@ -9,9 +9,9 @@ var client = dgram.createSocket( type );
 client.on( 'message', onServerMessage );
 
 var commandList = [
-	"REGISTER|7001",
+	"REGISTER|7001;zank",
 	"SETNAME|My Zank game",
-	"GAMES|list",
+	"GAMES|list;zank",
 	"UNREGISTER|7001"
 ];
 

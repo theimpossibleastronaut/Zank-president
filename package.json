@@ -4,7 +4,7 @@
   "description": "Discovery server for Zank games",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js bindv6=::0 bindv4=0.0.0.0"
+    "start": "node app.js bindv6=::0 bindv4=0.0.0.0 bindport=10101"
   },
   "author": "Martijn de Boer",
   "dependencies": {
