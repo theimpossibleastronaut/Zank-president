@@ -2,6 +2,8 @@
 A game discovery server accepting registrations via udp datagrams.
 Simple. Easy. No hassles.
 
+This lobby service has been written for the game Zank. It's about finding documents to retire politicians. The name President was chosen because it's the most high level politician.
+
 # Running
 npm install
 

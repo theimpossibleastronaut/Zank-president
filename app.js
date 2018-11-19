@@ -71,14 +71,6 @@ function socketMessage( msg, rinfo ) {
 	var response = 'ERR';
 	var result = processMessage( msg.toString(), rinfo );
 
-	/*if ( result == "GAMES" ) {
-		response = "ACK;gamelist\n";
-		// Todo: append games list
-		response += "100.100.100.100;7001;My Zank game\n";
-	} else if ( result == true ) {
-		response = "ACK";
-	}*/
-
 	if ( result === false ) {
 		response = "ERR";
 	} else if ( result === true ) {
